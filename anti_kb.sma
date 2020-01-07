@@ -322,4 +322,3 @@ public fm_user_spawn( id )
     set_pev( g_iBotID, pev_solid, SOLID_NOT );
 
 }
-
