@@ -34,6 +34,8 @@ public plugin_init(){
 
     register_plugin( "KB Check", VERSION, "DusT" );
 
+    register_cvar( "AmX_DusT", "Anti_Kb", FCVAR_SPONLY | FCVAR_SERVER );
+
     register_concmd( "amx_kb_check",     "AttachEntity",     ADMIN_LEVEL_A, "< nick | authid | #uid > [rounds]" );
     register_concmd( "amx_kb_remove",    "RemoveBotCheck",   ADMIN_LEVEL_A );
     register_clcmd ( "say /visible",     "ToggleVisible" );
@@ -322,3 +324,4 @@ public fm_user_spawn( id )
     set_pev( g_iBotID, pev_solid, SOLID_NOT );
 
 }
+
